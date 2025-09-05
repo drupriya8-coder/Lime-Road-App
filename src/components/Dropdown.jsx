@@ -17,12 +17,14 @@ export default function Dropdown() {
 
       {open && (
         <div className="absolute index right-0 mt-2 w-48 bg-white border rounded shadow-lg">
-          <a href="/profile" className="block px-4 py-2 hover:bg-gray-100">
+
+          <Link
+            to="/userprofile"
+            className="block px-4 py-2 hover:bg-gray-100"
+          >
             Profile
-          </a>
-          {/* <a href="/contact" className="block px-4 py-2 hover:bg-gray-100">
-            Contact
-          </a> */}
+          </Link>
+
           <Link
             to="/contact"
             className="block px-4 py-2 hover:bg-gray-100"
@@ -30,9 +32,19 @@ export default function Dropdown() {
           >
             Contact
           </Link>
+
+          <Link
+            to="/signup"
+            className="block px-4 py-2 hover:bg-gray-100"
+            onClick={() => setOpen(false)}
+          >
+            SignUp
+          </Link>
+
           <a href="/logout" className="block px-4 py-2 hover:bg-gray-100">
             Logout
           </a>
+
         </div>
       )}
     </div>
