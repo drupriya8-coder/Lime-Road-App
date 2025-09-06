@@ -114,7 +114,7 @@ export default function ProfileUpdate() {
           </div>
 
           {/* Phone */}
-          <div>
+          {/* <div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Phone
             </label>
@@ -127,7 +127,34 @@ export default function ProfileUpdate() {
               placeholder="+91 9876543210"
               required
             />
+          </div> */}
+
+
+          {/* Phone */}
+          <div>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              Phone
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={(e) => {
+                // sirf numbers hi allow kare
+                const value = e.target.value.replace(/\D/g, "");
+                if (value.length <= 10) {
+                  setFormData({ ...formData, phone: value });
+                }
+              }}
+              maxLength="10"
+              minLength="10"
+              pattern="[0-9]{10}"
+              className="w-full border rounded-lg p-2.5 bg-gray-50 dark:bg-gray-700 dark:text-white"
+              placeholder="9876543210"
+              required
+            />
           </div>
+
 
           {/* Bio */}
           <div>

@@ -8,7 +8,7 @@ const products = [
         image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9", category: "Electronics", name: "Smartphone", price: 15000
     },
     {
-        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab", category: "Clothing", name: "T-Shirt", price: 799
+        image: "https://rukminim2.flixcart.com/image/704/844/xif0q/t-shirt/b/y/w/s-mens-polyester-white-tshirt-half-sleeves-amsha-original-imahayaxpdgn5uga.jpeg?q=90&crop=false", category: "Clothing", name: "T-Shirt", price: 799
     },
     {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/King_Street_Sneak.JPG/250px-King_Street_Sneak.JPG",
