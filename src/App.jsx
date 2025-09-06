@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import MyFeed from "./pages/MyFeed";
 import Products from "./pages/Products";
+import ScrollBar from "./pages/ScrollBar";
 
 function App() {
   return (
@@ -11,6 +13,10 @@ function App() {
 
         {/* 👇 Ye line add ki hai Navbar ke niche */}
         <div className="border-b border-gray-300"></div>
+
+        <MyFeed/>
+
+        {/* <ScrollBar/> */}
 
         <main className="p-6">
           <h1 className="text-2xl font-bold">Trending Products</h1>
